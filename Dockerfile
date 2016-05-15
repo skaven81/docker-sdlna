@@ -15,7 +15,7 @@ ADD [ "https://github.com/nmaier/simpleDLNA/releases/download/v1.0/simpledlna-1.
 RUN 7z x simpledlna.7z && rm -f simpledlna.7z
 
 EXPOSE 39200 1900
-VOLUME [ "/images", "/cache" ]
+VOLUME [ "/media", "/cache" ]
 
-ENTRYPOINT [ "mono", "sdlna.exe", "--cache=/cache/sdlna.sqlite", "--port=39200", "--type=image", "/images" ]
+ENTRYPOINT [ "mono", "sdlna.exe", "--cache=/cache/sdlna.sqlite", "--port=39200", "--type=image", "/media" ]
 

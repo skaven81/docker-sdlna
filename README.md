@@ -21,7 +21,7 @@ Run it using a command similar to this:
 docker run -d --name=mysdlna --rm \
     --net=host \
     -p 39200:39200/tcp -p 1900:1900/udp \
-    -v /path/to/your/photos:/images \
+    -v /path/to/your/photos:/media \
     -v /var/cache:/cache \
     sdlna
 ```
