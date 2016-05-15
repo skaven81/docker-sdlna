@@ -18,7 +18,7 @@ docker build -t sdlna .
 Run it using a command similar to this:
 
 ```
-docker run -d --name=mysdlna --rm \
+docker run -d --name=mysdlna \
     --net=host \
     -p 39200:39200/tcp -p 1900:1900/udp \
     -v /path/to/your/photos:/media \
